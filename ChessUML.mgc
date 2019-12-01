@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="chess.Bishop" x="647" y="2158">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="data.Position"/>
+        <Communication destinationClassName="data.ChessBoard"/>
+    </Class>
+    <Class name="chess.King" x="1330" y="2068">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="chess.Chess"/>
+        <Association destinationClassName="data.Position"
+            endpointName="correctMove" kind="Simple"/>
+        <Communication destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="data.Position"/>
+        <Communication destinationClassName="data.ChessBoard"/>
+    </Class>
+    <Class name="data.LogSentence" x="1680" y="1236">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="data.Position"
+            endpointName="to" kind="Simple"/>
+        <Association destinationClassName="ui.ChessLabel"
+            endpointName="food" kind="Simple"/>
+        <Association destinationClassName="data.Position"
+            endpointName="from" kind="Simple"/>
+        <Association destinationClassName="ui.ChessLabel"
+            endpointName="moveChess" kind="Simple"/>
+        <Communication destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="data.Position"/>
+    </Class>
+    <Class name="constants.ChessConstants" x="1846" y="1783">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="data.Player" x="1216" y="1312">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="data.GameTime"
+            endpointName="time" kind="Simple"/>
+        <Association destinationClassName="ui.ChessLabel"
+            endpointName="chesses" kind="Simple"/>
+        <Communication destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="data.GameTime"/>
+    </Class>
+    <Class name="events.MouseClickEvent" x="437" y="958">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="data.EventHandler"
+            endpointName="handler" kind="Simple"/>
+        <Communication destinationClassName="data.EventHandler"/>
+    </Class>
+    <Class name="game.ReturnMainGame" x="782" y="182">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="chess.Rook" x="698" y="2007">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="data.Position"/>
+        <Communication destinationClassName="data.ChessBoard"/>
+    </Class>
+    <Class name="constants.ChessBoardConstants" x="1844" y="1719">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="data.Position" x="1652" y="2186">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="chess.Connon" x="729" y="2069">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="data.Position"/>
+        <Communication destinationClassName="data.ChessBoard"/>
+    </Class>
+    <Class name="data.GameData" x="1073" y="680">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="data.ChessBoard"/>
+        <Association destinationClassName="data.LogSentence"
+            endpointName="logs" kind="Simple"/>
+        <Association destinationClassName="ui.ChessLabel"
+            endpointName="chosenChess" kind="Simple"/>
+        <Association destinationClassName="data.Player"
+            endpointName="player1" kind="Simple"/>
+        <Association destinationClassName="data.Player"
+            endpointName="player2" kind="Simple"/>
+        <Association destinationClassName="data.Player"
+            endpointName="currentPlayer" kind="Simple"/>
+        <Communication destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="ui.ChessFile"/>
+        <Communication destinationClassName="data.Position"/>
+        <Communication destinationClassName="data.GameTime"/>
+        <Communication destinationClassName="data.LogSentence"/>
+        <Communication destinationClassName="ui.ChessLabel"/>
+        <Communication destinationClassName="data.Player"/>
+    </Class>
+    <Class name="game.GameOver" x="1486" y="866">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="ui.GameFrame" x="834" y="352">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="data.ChessBoard" x="778" y="1446">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="ui.TimeLabel" x="1384" y="1464">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="data.GameTime"
+            endpointName="time" kind="Simple"/>
+        <Association destinationClassName="game.GameOver"
+            endpointName="gameOver" kind="Simple"/>
+        <Communication destinationClassName="data.GameTime"/>
+        <Communication destinationClassName="game.GameOver"/>
+    </Class>
+    <Class name="chess.Guard" x="1113" y="2070">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="chess.Chess"/>
+        <Association destinationClassName="data.Position"
+            endpointName="correctMove" kind="Simple"/>
+        <Communication destinationClassName="data.Position"/>
+        <Communication destinationClassName="data.ChessBoard"/>
+    </Class>
+    <Class name="ui.ChessLabel" x="1006" y="1468">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="chess.Chess"
+            endpointName="chess" kind="Simple"/>
+        <Communication destinationClassName="data.Position"/>
+    </Class>
+    <Class name="game.Game" x="1358" y="48">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="game.ReturnMainGame"/>
+        <Extension destinationClassName="game.GameOver"/>
+        <Extension destinationClassName="data.EventHandler"/>
+        <Association destinationClassName="events.MouseClickEvent"
+            endpointName="mouseEvent" kind="Simple"/>
+        <Association destinationClassName="data.GameData"
+            endpointName="gamedata" kind="Simple"/>
+        <Association destinationClassName="ui.TimeLabel"
+            endpointName="timeLabel2" kind="Simple"/>
+        <Association destinationClassName="ui.TimeLabel"
+            endpointName="timeLabel1" kind="Simple"/>
+        <Association destinationClassName="data.Player"
+            endpointName="player1" kind="Simple"/>
+        <Association destinationClassName="data.Player"
+            endpointName="player2" kind="Simple"/>
+        <Association destinationClassName="ui.GameFrame"
+            endpointName="gameframe" kind="Simple"/>
+        <Communication destinationClassName="data.GameData"/>
+        <Communication destinationClassName="ui.TimeLabel"/>
+        <Communication destinationClassName="data.Player"/>
+    </Class>
+    <Class name="chess.Pawn" x="896" y="2077">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="data.Position"/>
+        <Communication destinationClassName="data.ChessBoard"/>
+    </Class>
+    <Class name="chess.Chess" x="904" y="1680">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="data.Position"
+            endpointName="pos" kind="Simple"/>
+    </Class>
+    <Class name="ui.ChessFile" x="1862" y="1859">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="chess.Knight" x="951" y="2165">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="chess.Chess"/>
+        <Communication destinationClassName="data.Position"/>
+        <Communication destinationClassName="data.ChessBoard"/>
+    </Class>
+    <Class name="data.GameTime" x="1368" y="1718">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="game.Review" x="444" y="158">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="data.EventHandler"/>
+        <Association destinationClassName="data.Player"
+            endpointName="rvP1" kind="Simple"/>
+        <Association destinationClassName="data.Player"
+            endpointName="rvP2" kind="Simple"/>
+        <Association destinationClassName="data.GameData"
+            endpointName="rvData" kind="Simple"/>
+        <Association destinationClassName="ui.GameFrame"
+            endpointName="reviewFrame" kind="Simple"/>
+        <Association destinationClassName="data.GameData"
+            endpointName="rvChange" kind="Simple"/>
+        <Association destinationClassName="events.MouseClickEvent"
+            endpointName="rvMouseEvent" kind="Simple"/>
+        <Association destinationClassName="game.ReturnMainGame"
+            endpointName="mgame" kind="Simple"/>
+        <Communication destinationClassName="game.Game"/>
+        <Communication destinationClassName="data.GameData"/>
+        <Communication destinationClassName="data.Player"/>
+    </Class>
+    <Class name="data.EventHandler" x="588" y="718">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>
